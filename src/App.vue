@@ -2,7 +2,7 @@
   <div id="app">
     <nav-bar />
     <el-row>
-      <el-col :span="4">
+      <el-col :span="2">
         <side-bar />
       </el-col>
       <el-col :span="20">
@@ -18,6 +18,7 @@ import NavBar from "@/components/NavBar/NavBar.vue";
 import SideBar from "@/components/SideBar/SideBar.vue";
 
 @Component({
+  name: "App",
   components: {
     NavBar,
     SideBar,

@@ -1,11 +1,16 @@
-import Vue from "vue";
 import App from "./App.vue";
+import Vue from "vue";
+
 import "./registerServiceWorker";
+import { store } from "./store";
 import router from "./router";
-import store from "./store";
+
 import Element from "element-ui";
-import "boxicons";
+
+import "../node_modules/boxicons/css/boxicons.min.css";
 import "element-ui/lib/theme-chalk/index.css";
+import "../src/styles/element-variables.scss";
+import "./styles/main.scss";
 
 Vue.config.productionTip = false;
 Vue.use(Element, { size: "small", zIndex: 3000 });

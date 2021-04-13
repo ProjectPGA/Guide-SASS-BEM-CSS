@@ -7,6 +7,8 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-@Component({})
+@Component({
+  name: "About",
+})
 export default class About extends Vue {}
 </script>

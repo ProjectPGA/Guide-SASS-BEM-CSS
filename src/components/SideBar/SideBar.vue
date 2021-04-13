@@ -1,42 +1,39 @@
 <template>
   <div class="side-bar">
-    <el-row>
-      <el-col>
-        <el-menu
-          default-active="2"
-          class="side-bar_menu"
-          @open="handleOpen"
-          @close="handleClose"
-          background-color="#143B52"
-          text-color="#FFF"
-          active-text-color="#BF195E"
-        >
-          <router-link class="side-bar_menu_item-link" to="/">
-            <el-menu-item index="1">
-              <i class="el-icon-house"></i>
-              <span>Home</span>
-            </el-menu-item>
-          </router-link>
-          <router-link class="side-bar_menu_item-link" to="/about">
-            <el-menu-item index="2">
-              <i class="el-icon-document"></i>
-              <span>CSS</span>
-            </el-menu-item>
-          </router-link>
-          <el-menu-item index="4">
-            <i class="el-icon-setting"></i>
-            <span>Navigator Four</span>
-          </el-menu-item>
-        </el-menu>
-      </el-col>
-    </el-row>
+    <el-menu
+      class="side-bar_menu"
+      default-active="/"
+      background-color="#D4E2EA"
+      text-color="#143b52"
+      active-text-color="#143b52"
+      :router="true"
+    >
+      <el-menu-item class="side-bar_menu_item" index="/">
+        <i class="side-bar_menu_item_icon bx bxs-home" />
+        <span class="side-bar_menu_item_title">Home</span>
+      </el-menu-item>
+      <el-menu-item class="side-bar_menu_item" index="/about">
+        <i class="side-bar_menu_item_icon bx bxl-css3" />
+        <span class="side-bar_menu_item_title">CSS</span>
+      </el-menu-item>
+      <el-menu-item class="side-bar_menu_item" index="4">
+        <i class="side-bar_menu_item_icon bx bxl-sass" />
+        <span class="side-bar_menu_item_title">Sass</span>
+      </el-menu-item>
+      <el-menu-item class="side-bar_menu_item" index="5">
+        <i class="side-bar_menu_item_icon bx bxs-chip" />
+        <span class="side-bar_menu_item_title">BEM</span>
+      </el-menu-item>
+    </el-menu>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-@Component({})
+@Component({
+  name: "SideBar",
+})
 export default class SideBar extends Vue {}
 </script>
 
@@ -46,9 +43,31 @@ export default class SideBar extends Vue {}
     min-height: 93vh;
     border-right: none;
 
-    &_item-link {
-      text-decoration: none;
+    &_item {
+      text-align: left;
+      &:hover {
+        background-color: #d4e2ea !important;
+      }
+
+      &_icon {
+        font-size: 23px;
+        color: #c4c4c4;
+        &:active {
+          color: #143b52;
+        }
+      }
+
+      &_title {
+        display: inline-block;
+        height: 51px;
+        margin-left: 3px;
+      }
     }
   }
+}
+
+/deep/ .is-active {
+  font-weight: bold;
+  letter-spacing: 0.75px;
 }
 </style>

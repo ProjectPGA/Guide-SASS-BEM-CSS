@@ -9,24 +9,10 @@
           />
         </el-col>
         <el-col :span="8">
-          <span class="container_header_title">SASS-BEM-CSS</span>
+          <span class="container_header_title">OpenSlot-Style-Guide</span>
         </el-col>
         <el-col :span="0.5">
-          <el-dropdown trigger="click">
-            <box-icon
-              class="container_header_language"
-              name="world"
-              color="white"
-            ></box-icon>
-            <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item class="container_dropdown_item"
-                >Spanish</el-dropdown-item
-              >
-              <el-dropdown-item class="container_dropdown_item"
-                >English</el-dropdown-item
-              >
-            </el-dropdown-menu>
-          </el-dropdown>
+          <nav-bar-language />
         </el-col>
       </el-row>
     </el-header>
@@ -36,11 +22,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import SideBar from "@/components/SideBar/SideBar.vue";
+import NavBarLanguage from "@/components/NavBar/NavbarLanguage.vue";
 
 @Component({
+  name: "NavBar",
   components: {
-    SideBar,
+    NavBarLanguage,
   },
 })
 export default class NavBar extends Vue {}
@@ -49,31 +36,21 @@ export default class NavBar extends Vue {}
 <style scoped lang="scss">
 .container {
   &_header {
-    background-color: #849199;
+    background-color: #143b52;
     font-size: 12px;
-    box-shadow: 1px 2px 1px #c4c4c4;
+    box-shadow: 1px 3px 2px #c4c4c4;
 
     &_title {
       line-height: 60px;
-      color: white;
+      color: #fff;
       font-weight: bold;
       font-size: 20px;
     }
 
     &_img {
-      height: 50px;
-      margin-top: 5px;
-      margin-top: 5px;
-    }
-
-    &_language {
-      height: 60px;
-      cursor: pointer;
-    }
-  }
-  &_dropdown {
-    &_item {
-      font-family: Helvetica, Arial, sans-serif;
+      height: 45px;
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
   }
 }
