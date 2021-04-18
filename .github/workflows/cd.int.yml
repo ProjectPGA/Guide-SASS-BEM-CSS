@@ -23,4 +23,4 @@ jobs:
       - run: npm install
       - run: npm ci
       - run: npm run build
-      - run: cp -a dist/* /var/www/html/int/portfolio-platform/
+      - run: cp -a dist/* /var/www/html/int/style-rules/
