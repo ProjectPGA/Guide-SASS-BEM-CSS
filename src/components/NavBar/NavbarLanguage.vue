@@ -48,34 +48,32 @@ export default class NavbarLanguage extends Vue {
     line-height: 60px;
     cursor: pointer;
     font-size: 28px;
-    color: white;
+    color: $secondary-color-light;
 
     &:hover {
-      color: #d4e2ea;
+      color: $secondary-color;
     }
   }
 
   &_dropdown {
     &_item {
       font-family: "Lexend", Helvetica, Arial, sans-serif;
-      color: #143b52;
+      color: $main-color;
 
       &:hover {
-        color: white !important;
+        color: $secondary-color-light !important;
       }
     }
   }
 }
-/deep/ .el-dropdown-menu,
+::v-deep .el-dropdown-menu,
 .el-popper {
-  background-color: #d4e2ea;
-  box-shadow: 0px 2px 3px gray;
-  border: none;
+  background-color: $secondary-color;
 }
-/deep/ .el-dropdown-menu__item:not(.is-disabled):hover {
-  background-color: #d4e2ea;
+::v-deep .el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: $secondary-color;
 }
-/deep/ .popper__arrow::after {
-  border-bottom-color: #d4e2ea !important;
+::v-deep .popper__arrow::after {
+  border-bottom-color: $secondary-color !important;
 }
 </style>

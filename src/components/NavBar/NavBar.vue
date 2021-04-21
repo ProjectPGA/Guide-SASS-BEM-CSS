@@ -5,11 +5,11 @@
         <el-col :span="0.5">
           <img
             class="container_header_img"
-            src="../../assets/img/LogoOSS.png"
+            src="../../assets/img/LogoOSS.svg"
           />
         </el-col>
         <el-col :span="8">
-          <span class="container_header_title">OpenSlot-Style-Guide</span>
+          <span class="container_header_title">OpenSlot-Guide-CSS</span>
         </el-col>
         <el-col :span="0.5">
           <nav-bar-language />
@@ -36,21 +36,19 @@ export default class NavBar extends Vue {}
 <style scoped lang="scss">
 .container {
   &_header {
-    background-color: #143b52;
+    background-color: $main-color;
     font-size: 12px;
-    box-shadow: 1px 3px 2px #c4c4c4;
 
     &_title {
       line-height: 60px;
-      color: #fff;
-      font-weight: bold;
+      color: $secondary-color;
+      font-weight: 500;
       font-size: 20px;
     }
 
     &_img {
-      height: 45px;
-      padding-top: 8px;
-      padding-bottom: 8px;
+      height: 35px;
+      padding-top: 12px;
     }
   }
 }

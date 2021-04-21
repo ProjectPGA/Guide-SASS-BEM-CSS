@@ -46,14 +46,14 @@ export default class SideBar extends Vue {}
     &_item {
       text-align: left;
       &:hover {
-        background-color: #d4e2ea !important;
+        background-color: $secondary-color !important;
       }
 
       &_icon {
         font-size: 23px;
         color: #c4c4c4;
         &:active {
-          color: #143b52;
+          color: $main-color;
         }
       }
 
@@ -66,7 +66,7 @@ export default class SideBar extends Vue {}
   }
 }
 
-/deep/ .is-active {
+::v-deep .is-active {
   font-weight: bold;
   letter-spacing: 0.75px;
 }
