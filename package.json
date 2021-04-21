@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "format": "prettier --write \"./**/*.?(vue|ts|js|scss|html)\""
+    "format": "prettier --write \"./**/*.?(vue|ts|js|scss|html)\"",
+    "format:check": "prettier --list-different \"./**/*.?(vue|ts|js|scss|html)\""
   },
   "dependencies": {
     "boxicons": "^2.0.7",
