@@ -43,6 +43,11 @@ export default class SideBar extends Vue {}
     min-height: 93vh;
     border-right: none;
 
+    ::v-deep .is-active {
+      font-weight: bold;
+      letter-spacing: 0.75px;
+    }
+
     &_item {
       text-align: left;
       &:hover {
@@ -64,10 +69,5 @@ export default class SideBar extends Vue {}
       }
     }
   }
-}
-
-::v-deep .is-active {
-  font-weight: bold;
-  letter-spacing: 0.75px;
 }
 </style>

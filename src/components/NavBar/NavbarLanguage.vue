@@ -1,17 +1,17 @@
 <template>
-  <el-dropdown trigger="click" @command="changeLanguage">
-    <i class="language_title bx bx-world bx-tada-hover" />
-    <el-dropdown-menu slot="dropdown">
+  <el-dropdown class="dropdown" trigger="click" @command="changeLanguage">
+    <i class="dropdown_title bx bx-world bx-tada-hover" />
+    <el-dropdown-menu class="dropdown_menu" slot="dropdown">
       <el-dropdown-item
         :disabled="currentLanguage === 'es'"
         command="es"
-        class="language_dropdown_item"
+        class="dropdown_menu_item"
         >Spanish</el-dropdown-item
       >
       <el-dropdown-item
         :disabled="currentLanguage === 'en'"
         command="en"
-        class="language_dropdown_item"
+        class="dropdown_menu_item"
         >English</el-dropdown-item
       >
     </el-dropdown-menu>
@@ -43,7 +43,7 @@ export default class NavbarLanguage extends Vue {
 </script>
 
 <style scoped lang="scss">
-.language {
+.dropdown {
   &_title {
     line-height: 60px;
     cursor: pointer;
@@ -54,8 +54,11 @@ export default class NavbarLanguage extends Vue {
       color: $secondary-color;
     }
   }
+  &_menu {
+    background-color: $secondary-color;
+    box-shadow: 0px 2px 3px gray;
+    border: none;
 
-  &_dropdown {
     &_item {
       font-family: "Lexend", Helvetica, Arial, sans-serif;
       color: $main-color;
@@ -64,16 +67,13 @@ export default class NavbarLanguage extends Vue {
         color: $secondary-color-light !important;
       }
     }
+
+    ::v-deep .el-dropdown-menu__item:not(.is-disabled):hover {
+      background-color: $secondary-color;
+    }
+    ::v-deep .popper__arrow::after {
+      border-bottom-color: $secondary-color !important;
+    }
   }
-}
-::v-deep .el-dropdown-menu,
-.el-popper {
-  background-color: $secondary-color;
-}
-::v-deep .el-dropdown-menu__item:not(.is-disabled):hover {
-  background-color: $secondary-color;
-}
-::v-deep .popper__arrow::after {
-  border-bottom-color: $secondary-color !important;
 }
 </style>
