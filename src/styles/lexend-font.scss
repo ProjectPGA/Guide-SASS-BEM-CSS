@@ -4,7 +4,7 @@
   src: url("../assets/fonts/lexend-regular.eot?#iefix")
       format("embedded-opentype"),
     url("../assets/fonts/lexend-regular.woff") format("woff"),
-    // url("../assets/fonts/lexend-regular.ttf") format("truetype"),
+    url("../assets/fonts/lexend-regular.ttf") format("truetype"),
     url("../assets/fonts/lexend-regular.svg#Lexend") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -17,7 +17,7 @@
       format("embedded-opentype"),
     url("../assets/fonts/lexend-medium.woff") format("woff"),
     url("../assets/fonts/lexend-medium.ttf") format("truetype"),
-    url("../assets/fonts/lexend-medium.svg") format("svg");
+    url("../assets/fonts/lexend-medium.svg#Lexend") format("svg");
   font-weight: 500;
   font-style: normal;
 }
