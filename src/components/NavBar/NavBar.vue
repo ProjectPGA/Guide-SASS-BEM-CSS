@@ -41,7 +41,7 @@ export default class NavBar extends Vue {}
 
     &_title {
       line-height: 60px;
-      color: $secondary-color;
+      color: $secondary-color-light;
       font-weight: 500;
       font-size: 20px;
     }

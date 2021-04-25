@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
+    <h1>PRUEBA HOME</h1>
     <p>PRUEBA HOME</p>
     <p>PRUEBA HOME</p>
     <p>PRUEBA HOME</p>
@@ -33,3 +32,9 @@ import { Component, Vue } from "vue-property-decorator";
 })
 export default class Home extends Vue {}
 </script>
+
+<style scoped lang="scss">
+.test {
+  font-size: 50px !important;
+}
+</style>

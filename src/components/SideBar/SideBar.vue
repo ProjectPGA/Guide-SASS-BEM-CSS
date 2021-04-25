@@ -40,7 +40,7 @@ export default class SideBar extends Vue {}
 <style scoped lang="scss">
 .side-bar {
   &_menu {
-    min-height: 93vh;
+    min-height: calc(100vh - 60px);
     border-right: none;
 
     ::v-deep .is-active {
