@@ -12,7 +12,9 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
+
+import mainStore from "@/store/main-store/MainStore";
 
 import NavBar from "@/components/NavBar/NavBar.vue";
 import SideBar from "@/components/SideBar/SideBar.vue";
@@ -24,7 +26,18 @@ import SideBar from "@/components/SideBar/SideBar.vue";
     SideBar,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private mainStore = mainStore.context(this.$store);
+
+  private get currentLanguage(): string {
+    return this.mainStore.state.currentLanguage;
+  }
+
+  @Watch("currentLanguage")
+  private onChangeLanguage(): void {
+    this.$i18n.locale = this.currentLanguage;
+  }
+}
 </script>
 <style lang="scss">
 #app {

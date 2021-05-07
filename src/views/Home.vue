@@ -1,27 +1,5 @@
 <template>
-  <div class="home">
-    <h1>PRUEBA HOME</h1>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-    <p>PRUEBA HOME</p>
-  </div>
+  <div class="home" />
 </template>
 
 <script lang="ts">

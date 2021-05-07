@@ -6,14 +6,14 @@
         :disabled="currentLanguage === 'es'"
         command="es"
         class="dropdown_menu_item"
-        >Spanish</el-dropdown-item
+        >{{ $t("components.navbarLanguage.spanish") }}</el-dropdown-item
       >
       <el-dropdown-item
         :disabled="currentLanguage === 'en'"
         command="en"
         class="dropdown_menu_item"
-        >English</el-dropdown-item
-      >
+        >{{ $t("components.navbarLanguage.english") }}
+      </el-dropdown-item>
     </el-dropdown-menu>
   </el-dropdown>
 </template>
@@ -45,9 +45,9 @@ export default class NavbarLanguage extends Vue {
 <style scoped lang="scss">
 .dropdown {
   &_title {
-    line-height: 60px;
+    line-height: 3.75rem;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: $secondary-color-light;
 
     &:hover {
@@ -56,7 +56,7 @@ export default class NavbarLanguage extends Vue {
   }
   &_menu {
     background-color: $secondary-color;
-    box-shadow: 0px 2px 3px gray;
+    box-shadow: 0rem 0.125rem 0.188rem gray;
     border: none;
 
     &_item {

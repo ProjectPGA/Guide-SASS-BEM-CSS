@@ -9,7 +9,9 @@
           />
         </el-col>
         <el-col :span="8">
-          <span class="container_header_title">OpenSlot-Guide-CSS</span>
+          <span class="container_header_title">{{
+            $t("components.navBar.title")
+          }}</span>
         </el-col>
         <el-col :span="0.5">
           <nav-bar-language />
@@ -37,18 +39,17 @@ export default class NavBar extends Vue {}
 .container {
   &_header {
     background-color: $main-color;
-    font-size: 12px;
 
     &_title {
-      line-height: 60px;
+      line-height: 3.75rem;
       color: $secondary-color-light;
       font-weight: 500;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     &_img {
-      height: 35px;
-      padding-top: 12px;
+      height: 2.188rem;
+      padding-top: 0.75rem;
     }
   }
 }

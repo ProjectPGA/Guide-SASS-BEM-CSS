@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Lexend";
-  src: url("../assets/fonts/lexend-regular.eot");
-  src: url("../assets/fonts/lexend-regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../assets/fonts/lexend-regular.otf"),
     url("../assets/fonts/lexend-regular.woff") format("woff"),
     url("/assets/fonts/lexend-regular.ttf") format("truetype"),
     url("../assets/fonts/lexend-regular.svg#Lexend") format("svg");
@@ -12,9 +10,7 @@
 
 @font-face {
   font-family: "Lexend";
-  src: url("../assets/fonts/lexend-medium.eot");
-  src: url("../assets/fonts/lexend-medium.eot#iefix")
-      format("embedded-opentype"),
+  src: url("../assets/fonts/lexend-medium.otf"),
     url("../assets/fonts/lexend-medium.woff") format("woff"),
     url("../assets/fonts/lexend-medium.ttf") format("truetype"),
     url("../assets/fonts/lexend-medium.svg#Lexend") format("svg");
@@ -24,8 +20,7 @@
 
 @font-face {
   font-family: "Lexend";
-  src: url("../assets/fonts/lexend-bold.eot");
-  src: url("../assets/fonts/lexend-bold.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/lexend-bold.otf"),
     url("../assets/fonts/lexend-bold.woff") format("woff"),
     url("../assets/fonts/lexend-bold.ttf") format("truetype"),
     url("../assets/fonts/lexend-bold.svg#Lexend") format("svg");
