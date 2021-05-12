@@ -52,7 +52,7 @@ export default class SideBar extends Vue {}
     border-right: none;
 
     ::v-deep .is-active {
-      font-weight: bold;
+      font-weight: 500;
       letter-spacing: 0.047rem;
     }
 
