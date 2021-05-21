@@ -24,7 +24,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import NavBarLanguage from "@/components/NavBar/NavbarLanguage.vue";
+import NavBarLanguage from "@/components/navBar/NavbarLanguage.vue";
 
 @Component({
   name: "NavBar",
