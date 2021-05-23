@@ -14,7 +14,7 @@
           }}</span>
         </el-col>
         <el-col :span="0.5">
-          <nav-bar-language />
+          <navbar-language />
         </el-col>
       </el-row>
     </el-header>
@@ -24,15 +24,15 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import NavBarLanguage from "@/components/navBar/NavbarLanguage.vue";
+import NavbarLanguage from "@/components/navbar/NavbarLanguage.vue";
 
 @Component({
   name: "NavBar",
   components: {
-    NavBarLanguage,
+    NavbarLanguage,
   },
 })
-export default class NavBar extends Vue {}
+export default class Navbar extends Vue {}
 </script>
 
 <style scoped lang="scss">

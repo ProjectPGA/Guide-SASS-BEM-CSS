@@ -1,13 +1,13 @@
 const en = {
   components: {
-    navBar: {
+    navbar: {
       title: "OpenSlot-Guide-CSS",
     },
     navbarLanguage: {
       spanish: "Spanish",
       english: "English",
     },
-    sideBar: {
+    sidebar: {
       home: "Home",
       css: "CSS",
       sass: "Sass",
