@@ -27,7 +27,7 @@ import { Component, Vue } from "vue-property-decorator";
 import NavbarLanguage from "@/components/navbar/NavbarLanguage.vue";
 
 @Component({
-  name: "NavBar",
+  name: "Navbar",
   components: {
     NavbarLanguage,
   },
