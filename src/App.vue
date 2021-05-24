@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <navbar />
+    <nav-bar />
     <el-row>
       <el-col :span="2">
-        <sidebar />
+        <side-bar />
       </el-col>
       <el-col :span="20">
         <router-view />
@@ -16,14 +16,14 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 
 import mainStore from "@/store/main-store/MainStore";
 
-import Navbar from "@/components/NavBar/Navbar.vue";
-import Sidebar from "@/components/SideBar/Sidebar.vue";
+import NavBar from "@/components/NavBar/NavBar.vue";
+import SideBar from "@/components/SideBar/SideBar.vue";
 
 @Component({
   name: "App",
   components: {
-    Navbar,
-    Sidebar,
+    NavBar,
+    SideBar,
   },
 })
 export default class App extends Vue {

@@ -27,12 +27,12 @@ import { Component, Vue } from "vue-property-decorator";
 import NavbarLanguage from "@/components/NavBar/NavbarLanguage.vue";
 
 @Component({
-  name: "Navbar",
+  name: "NavBar",
   components: {
     NavbarLanguage,
   },
 })
-export default class Navbar extends Vue {}
+export default class NavBar extends Vue {}
 </script>
 
 <style scoped lang="scss">

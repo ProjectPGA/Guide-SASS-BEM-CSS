@@ -40,9 +40,9 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  name: "Sidebar",
+  name: "SideBar",
 })
-export default class Sidebar extends Vue {}
+export default class SideBar extends Vue {}
 </script>
 
 <style scoped lang="scss">
