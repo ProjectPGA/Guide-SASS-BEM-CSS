@@ -10,27 +10,27 @@
     >
       <el-menu-item class="sidebar_menu_item" index="/">
         <i class="sidebar_menu_item_icon bx bxs-home" />
-        <span class="sidebar_menu_item_title">{{
-          $t("components.sidebar.home")
-        }}</span>
+        <span class="sidebar_menu_item_title">
+          {{ $t("components.sidebar.home") }}</span
+        >
       </el-menu-item>
       <el-menu-item class="sidebar_menu_item" index="/about">
         <i class="sidebar_menu_item_icon bx bxl-css3" />
-        <span class="side-bar_menu_item_title">{{
-          $t("components.sidebar.css")
-        }}</span>
+        <span class="side-bar_menu_item_title">
+          {{ $t("components.sidebar.css") }}</span
+        >
       </el-menu-item>
       <el-menu-item class="sidebar_menu_item" index="4">
         <i class="sidebar_menu_item_icon bx bxl-sass" />
-        <span class="sidebar_menu_item_title">{{
-          $t("components.sidebar.sass")
-        }}</span>
+        <span class="sidebar_menu_item_title">
+          {{ $t("components.sidebar.sass") }}</span
+        >
       </el-menu-item>
       <el-menu-item class="sidebar_menu_item" index="5">
         <i class="sidebar_menu_item_icon bx bxs-chip" />
-        <span class="sidebar_menu_item_title">{{
-          $t("components.sidebar.bem")
-        }}</span>
+        <span class="sidebar_menu_item_title">
+          {{ $t("components.sidebar.bem") }}</span
+        >
       </el-menu-item>
     </el-menu>
   </div>
