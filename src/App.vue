@@ -16,8 +16,8 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 
 import mainStore from "@/store/main-store/MainStore";
 
-import NavBar from "@/components/NavBar/Navbar.vue";
-import SideBar from "@/components/SideBar/Sidebar.vue";
+import NavBar from "@/components/NavBar/NavBar.vue";
+import SideBar from "@/components/SideBar/SideBar.vue";
 
 @Component({
   name: "App",
