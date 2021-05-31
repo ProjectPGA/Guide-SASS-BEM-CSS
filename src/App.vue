@@ -1,32 +1,50 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <nav-bar />
+    <el-row>
+      <el-col :span="2">
+        <side-bar />
+      </el-col>
+      <el-col :span="20">
+        <router-view />
+      </el-col>
+    </el-row>
   </div>
 </template>
+<script lang="ts">
+import { Component, Vue, Watch } from "vue-property-decorator";
 
+import mainStore from "@/store/main-store/MainStore";
+
+import NavBar from "@/components/NavBar/NavBar.vue";
+import SideBar from "@/components/SideBar/SideBar.vue";
+
+@Component({
+  name: "App",
+  components: {
+    NavBar,
+    SideBar,
+  },
+})
+export default class App extends Vue {
+  private mainStore = mainStore.context(this.$store);
+
+  private get currentLanguage(): string {
+    return this.mainStore.state.currentLanguage;
+  }
+
+  @Watch("currentLanguage")
+  private onChangeLanguage(): void {
+    this.$i18n.locale = this.currentLanguage;
+  }
+}
+</script>
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
