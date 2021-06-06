@@ -10,7 +10,7 @@
         </el-col>
         <el-col :span="8">
           <span class="container_header_title">{{
-            $t("components.navBar.title")
+            $t("components.navbar.title")
           }}</span>
         </el-col>
         <el-col :span="0.5">
