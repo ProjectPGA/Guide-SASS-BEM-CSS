@@ -28,7 +28,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import SidebarItem from "@/components/SideBar/SidebarItem.vue";
+import SidebarItem from "@/components/sidebar/SidebarItem.vue";
 
 @Component({
   name: "SideBar",
