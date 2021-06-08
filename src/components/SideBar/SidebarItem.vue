@@ -20,8 +20,15 @@ export default class SidebarItem extends Vue {
 <style scoped lang="scss">
 .item {
   text-align: left;
+
   &:hover {
     background-color: $secondary-color !important;
+    i {
+      color: $main-color;
+    }
+  }
+  &:focus {
+    background-color: $secondary-color;
   }
 
   &_icon {
@@ -36,6 +43,7 @@ export default class SidebarItem extends Vue {
     display: inline-block;
     height: 3.188rem;
     margin-left: 0.188rem;
+    color: $main-color;
   }
 }
 </style>

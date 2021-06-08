@@ -1,13 +1,6 @@
 <template>
   <div class="sidebar">
-    <el-menu
-      class="sidebar_menu"
-      default-active="/"
-      background-color="#D4E2EA"
-      text-color="#143b52"
-      active-text-color="#143b52"
-      :router="true"
-    >
+    <el-menu class="sidebar_menu" default-active="/" :router="true">
       <sidebar-item
         icon="bx bxs-home"
         index="/"
@@ -51,10 +44,12 @@ export default class SideBar extends Vue {}
   &_menu {
     min-height: calc(100vh - 3.75rem);
     border-right: none;
+    background-color: $secondary-color;
 
     ::v-deep .is-active {
       font-weight: 500;
       letter-spacing: 0.047rem;
+      color: $main-color;
     }
   }
 }
