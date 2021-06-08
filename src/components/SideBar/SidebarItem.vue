@@ -33,7 +33,7 @@ export default class SidebarItem extends Vue {
 
   &_icon {
     font-size: 1.438rem;
-    color: #c4c4c4;
+    color: $silver;
     &:active {
       color: $main-color;
     }
