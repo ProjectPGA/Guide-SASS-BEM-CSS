@@ -39,6 +39,8 @@ export default class NavBar extends Vue {}
 .container {
   &_header {
     background-color: $main-color;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 
     &_title {
       line-height: 3.75rem;
@@ -48,8 +50,8 @@ export default class NavBar extends Vue {}
     }
 
     &_img {
-      height: 2.188rem;
-      padding-top: 0.75rem;
+      height: 2.6rem;
+      padding-top: 0.6rem;
     }
   }
 }
