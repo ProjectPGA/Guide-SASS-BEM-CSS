@@ -1,0 +1,14 @@
+.slide-sidebar-enter {
+  width: 0px !important;
+  transition: width 0.4s linear;
+}
+
+.slide-sidebar-enter-active,
+.slide-sidebar-leave-to {
+  transition: width 0.4s linear;
+}
+
+.slide-sidebar-leave-active {
+  width: 0px !important;
+  transition: width 0.3s linear;
+}

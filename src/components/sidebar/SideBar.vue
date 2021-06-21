@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <el-menu class="sidebar_menu" default-active="/" :router="true">
+    <el-menu class="sidebar__menu" default-active="/" :router="true">
       <sidebar-item
         icon="bx bxs-home"
         index="/"
@@ -28,6 +28,8 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
+// import mainStore from "@/store/main-store/MainStore";
+
 import SidebarItem from "@/components/sidebar/SidebarItem.vue";
 
 @Component({
@@ -41,10 +43,20 @@ export default class SideBar extends Vue {}
 
 <style scoped lang="scss">
 .sidebar {
-  &_menu {
+  width: 9.688rem;
+
+  @include touch {
+    width: 6.875rem;
+  }
+
+  &__menu {
     min-height: calc(100vh - 3.75rem);
     border-right: none;
     background-color: $secondary-color;
+
+    @include touch {
+      min-height: calc(100vh - 3.125rem);
+    }
 
     ::v-deep .is-active {
       font-weight: 500;
