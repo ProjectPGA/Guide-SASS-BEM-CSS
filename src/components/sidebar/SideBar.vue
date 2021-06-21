@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <el-menu class="sidebar_menu" default-active="/" :router="true">
+    <el-menu class="sidebar__menu" default-active="/" :router="true">
       <sidebar-item
         icon="bx bxs-home"
         index="/"
@@ -41,7 +41,7 @@ export default class SideBar extends Vue {}
 
 <style scoped lang="scss">
 .sidebar {
-  &_menu {
+  &__menu {
     min-height: calc(100vh - 3.75rem);
     border-right: none;
     background-color: $secondary-color;

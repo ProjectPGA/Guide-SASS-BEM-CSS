@@ -1,7 +1,7 @@
 <template>
   <el-menu-item class="item" :index="index">
-    <i :class="icon" class="item_icon" />
-    <span class="item_title">{{ $t(text) }}</span>
+    <i :class="icon" class="item__icon" />
+    <span class="item__title">{{ $t(text) }}</span>
   </el-menu-item>
 </template>
 <script lang="ts">
@@ -31,7 +31,7 @@ export default class SidebarItem extends Vue {
     background-color: $secondary-color;
   }
 
-  &_icon {
+  &__icon {
     font-size: 1.438rem;
     color: $silver;
     &:active {
@@ -39,7 +39,7 @@ export default class SidebarItem extends Vue {
     }
   }
 
-  &_title {
+  &__title {
     display: inline-block;
     height: 3.188rem;
     margin-left: 0.188rem;

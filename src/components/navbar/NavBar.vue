@@ -1,15 +1,15 @@
 <template>
   <el-container class="container">
-    <el-header class="container_header">
+    <el-header class="container__header">
       <el-row type="flex" justify="space-between">
         <el-col :span="0.5">
           <img
-            class="container_header_img"
+            class="container__header__img"
             src="../../assets/img/LogoOSS.svg"
           />
         </el-col>
         <el-col :span="8">
-          <span class="container_header_title">{{
+          <span class="container__header__title">{{
             $t("components.navbar.title")
           }}</span>
         </el-col>
@@ -37,19 +37,19 @@ export default class NavBar extends Vue {}
 
 <style scoped lang="scss">
 .container {
-  &_header {
+  &__header {
     background-color: $main-color;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
 
-    &_title {
+    &__title {
       line-height: 3.75rem;
       color: $secondary-color-light;
       font-weight: 500;
       font-size: 1.25rem;
     }
 
-    &_img {
+    &__img {
       height: 2.6rem;
       padding-top: 0.6rem;
     }
