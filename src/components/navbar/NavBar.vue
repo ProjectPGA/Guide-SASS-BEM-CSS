@@ -9,7 +9,7 @@
         <el-col class="container__header__button-logo" :span="0.5">
           <el-button
             @click="hiddeSidebar"
-            class="container__header__button-logo_button"
+            class="container__header__button-logo__button"
             ><i
               class="bx bx-menu container__header__button-logo__button__icon"
             ></i
