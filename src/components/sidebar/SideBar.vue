@@ -46,7 +46,7 @@ export default class SideBar extends Vue {}
   width: 9.688rem;
 
   @include touch {
-    width: 6.875rem;
+    width: 6.563rem;
   }
 
   &__menu {

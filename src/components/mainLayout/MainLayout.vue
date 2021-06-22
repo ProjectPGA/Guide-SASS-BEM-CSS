@@ -52,7 +52,7 @@ export default class MainLayout extends Vue {
     width: 9.688rem;
 
     @include touch {
-      width: 6.687rem;
+      width: 6.563rem;
       overflow: auto;
       flex-shrink: 0;
     }
