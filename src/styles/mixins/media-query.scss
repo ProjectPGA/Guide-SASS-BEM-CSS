@@ -1,0 +1,7 @@
+$touch: 900px;
+
+@mixin touch {
+  @media (max-width: #{$touch}) {
+    @content;
+  }
+}

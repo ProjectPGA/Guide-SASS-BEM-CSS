@@ -7,10 +7,10 @@ import router from "./router";
 
 import Element from "element-ui";
 import i18n from "@/localization/localization";
-
 import "../node_modules/boxicons/css/boxicons.min.css";
 import "element-ui/lib/theme-chalk/index.css";
 import "../src/styles/element-variables.scss";
+import "element-ui/lib/theme-chalk/base.css";
 import "./styles/main.scss";
 
 Vue.config.productionTip = false;

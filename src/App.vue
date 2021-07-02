@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <nav-bar />
-    <el-row>
-      <el-col :span="2">
+    <main-layout>
+      <template v-slot:navbar>
+        <nav-bar />
+      </template>
+      <template v-slot:sidebar>
         <side-bar />
-      </el-col>
-      <el-col :span="20">
+      </template>
+      <template v-slot:main>
         <router-view />
-      </el-col>
-    </el-row>
+      </template>
+    </main-layout>
   </div>
 </template>
 <script lang="ts">
@@ -18,12 +20,14 @@ import mainStore from "@/store/main-store/MainStore";
 
 import NavBar from "@/components/navbar/NavBar.vue";
 import SideBar from "@/components/sidebar/SideBar.vue";
+import MainLayout from "@/components/mainLayout/MainLayout.vue";
 
 @Component({
   name: "App",
   components: {
     NavBar,
     SideBar,
+    MainLayout,
   },
 })
 export default class App extends Vue {

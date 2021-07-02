@@ -1,7 +1,7 @@
 <template>
   <el-dropdown class="dropdown" trigger="click" @command="changeLanguage">
     <i class="dropdown__title bx bx-world bx-tada-hover" />
-    <el-dropdown-menu class="dropdown_menu" slot="dropdown">
+    <el-dropdown-menu class="dropdown__menu" slot="dropdown">
       <el-dropdown-item
         :disabled="currentLanguage === 'es'"
         command="es"
@@ -49,6 +49,13 @@ export default class NavbarLanguage extends Vue {
     cursor: pointer;
     font-size: 1.75rem;
     color: $secondary-color-light;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @include touch {
+      font-size: 1.25rem;
+      height: 3.125rem;
+      line-height: 3.125rem;
+    }
 
     &:hover {
       color: $secondary-color;
@@ -62,6 +69,7 @@ export default class NavbarLanguage extends Vue {
     &__item {
       font-family: "Lexend", Helvetica, Arial, sans-serif;
       color: $main-color;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
       &:hover {
         color: $secondary-color-light !important;

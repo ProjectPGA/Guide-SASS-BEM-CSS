@@ -20,6 +20,8 @@ export default class SidebarItem extends Vue {
 <style scoped lang="scss">
 .item {
   text-align: left;
+  line-height: 3.313rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:hover {
     background-color: $secondary-color !important;
@@ -34,6 +36,10 @@ export default class SidebarItem extends Vue {
   &__icon {
     font-size: 1.438rem;
     color: $silver;
+
+    @include touch {
+      font-size: 1.2rem;
+    }
     &:active {
       color: $main-color;
     }
@@ -44,6 +50,10 @@ export default class SidebarItem extends Vue {
     height: 3.188rem;
     margin-left: 0.188rem;
     color: $main-color;
+
+    @include touch {
+      font-size: 0.75rem;
+    }
   }
 }
 </style>
