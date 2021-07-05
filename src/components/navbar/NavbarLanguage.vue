@@ -73,12 +73,14 @@ export default class NavbarLanguage extends Vue {
 
       &:hover {
         color: $secondary-color-light !important;
+        background-color: $secondary-color !important;
+      }
+      &:focus {
+        color: $main-color;
+        background-color: $secondary-color;
       }
     }
 
-    ::v-deep .el-dropdown-menu__item:not(.is-disabled):hover {
-      background-color: $secondary-color;
-    }
     ::v-deep .popper__arrow::after {
       border-bottom-color: $secondary-color !important;
     }
